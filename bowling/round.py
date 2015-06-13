@@ -8,9 +8,7 @@ NON_START = -1
 
 class Round(object):
     def __init__(self, hit_num=2):
-        self.state = NON_START
         self.hits = []
-        self.hit_scores = [0 for _ in range(hit_num)]
         self.hit_times = 0
 
     @property
