@@ -1,3 +1,4 @@
+from bowling.hit import Hit
 
 STRIKE = 0
 SPARE = 1
@@ -7,6 +8,7 @@ NON_START = -1
 class Round(object):
     def __init__(self, hit_num=2):
         self.state = NON_START
+        self.hits = []
         self.hit_scores = [0 for _ in range(hit_num)]
         self.hit_times = 0
 
@@ -15,19 +17,13 @@ class Round(object):
         return sum(self.hit_scores)
 
     def hit(self, score):
-        self.hit_scores[self.hit_times] = score
-        if self.hit_times == 0:
-            if self.score == 10:
-                self.state = STRIKE
-            else:
-                self.state = COUNT_SELF
-        elif self.hit_times == 1 and self.state != STRIKE:
-            if self.score == 10:
-                self.state = SPARE
-            else:
-                self.state = COUNT_SELF
+
+        if self.hit_times == 0 and score == 10:
+            self.hits.append(Hit(score=score, count_next=2))
+        elif self.hit_times == 1 and self.hits[0].score + score == 10:
+            self.hits.append(Hit(score=score, count_next=1))
         else:
-            raise Exception("Invalid")
+            self.hits.append(Hit(score=score, count_next=0))
 
         self.hit_times += 1
 
@@ -37,14 +33,12 @@ class FinalRound(Round):
         super().__init__(hit_num=3)
 
     def hit(self, score):
-        if self.hit_times == 0:
-            self.hit_scores[0] = score
-        elif self.hit_times == 1:
-            self.hit_scores[1] = score
-        elif self.hit_times == 2 and self.score >= 10:
-            self.hit_scores[2] = score
+        if self.hit_times == 0 and score == 10:
+            self.hits.append(Hit(score=score, count_next=0))
+        elif self.hit_times == 1 and self.hits[0].score + score == 10:
+            self.hits.append(Hit(score=score, count_next=0))
         else:
-            raise Exception("Invalid")
+            self.hits.append(Hit(score=score, count_next=0))
 
         self.state = COUNT_SELF
         self.hit_times += 1
