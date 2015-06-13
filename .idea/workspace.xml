@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eff30027-d5c9-4202-a294-fc1879e098b1" name="Default" comment="">
+    <list default="true" id="eff30027-d5c9-4202-a294-fc1879e098b1" name="Default" comment="refactor: remove loop">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bowling/game.py" afterPath="$PROJECT_DIR$/bowling/game.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bowling/round.py" afterPath="$PROJECT_DIR$/bowling/round.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bowling.iws" />
@@ -35,24 +36,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="round.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="round.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bowling/round.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.45021644">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="game.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bowling/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4338843">
-              <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hit.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bowling/hit.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_game.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_game.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="96" column="29" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,8 +95,8 @@
       <list>
         <option value="$PROJECT_DIR$/test/test_game.py" />
         <option value="$PROJECT_DIR$/bowling/hit.py" />
-        <option value="$PROJECT_DIR$/bowling/round.py" />
         <option value="$PROJECT_DIR$/bowling/game.py" />
+        <option value="$PROJECT_DIR$/bowling/round.py" />
       </list>
     </option>
   </component>
@@ -87,8 +108,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="4" />
+    <option name="y" value="23" />
+    <option name="width" value="1436" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -169,23 +192,23 @@
     <property name="last_opened_file_path" value="$USER_HOME$/.virtualenvs/py27/bin/python2.7" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="FullScreen" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="61" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="128" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="79" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="146" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="81" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="148" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="773" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="942" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="49" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="142" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="79" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="171" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="82" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="175" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="784" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="876" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RunManager" selected="Python tests.Unittests in GameTestCase">
@@ -457,24 +480,36 @@
       <option name="project" value="LOCAL" />
       <updated>1434176729043</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refactor: remove loop">
+      <created>1434179814863</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1434179814863</updated>
+    </task>
+    <task id="LOCAL-00004" summary="refactor: remove loop">
+      <created>1434179833003</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1434179833003</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="4" y="23" width="1436" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32910156" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38313252" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294271" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37579617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20171674" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19010043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294271" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -507,13 +542,22 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="refactor: add hit model to simplify code." />
     <MESSAGE value="refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+    <MESSAGE value="refactor: remove loop" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: remove loop" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -595,35 +639,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90625">
-          <caret line="112" column="31" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="96" column="29" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bowling/hit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.037760418">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bowling/round.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bowling/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4338843">
-          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bowling/round.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45021644">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

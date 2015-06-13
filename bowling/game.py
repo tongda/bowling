@@ -14,10 +14,10 @@ class Game(object):
 
         hits = list(itertools.chain(*(map(lambda r: r.hits, self.rounds))))
 
-        def calc_score_new(hs):
+        def calc_score(hs):
             return hs[0].score + sum(
                 map(lambda h: h.score, hs[1:1 + hs[0].count_next]))
 
-        return reduce(lambda sum, hs: sum + calc_score_new(hs),
+        return reduce(lambda total, hs: total + calc_score(hs),
                       itertools.zip_longest(hits, hits[1:], hits[2:]),
                       0)
